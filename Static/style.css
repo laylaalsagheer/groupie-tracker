@@ -1,0 +1,141 @@
+/* Global View */
+body{
+    font-family: 'Asap', sans-serif;
+    color: white;
+    background-color: #EBEBEB;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    padding-bottom: 100px;
+}
+
+.container{
+    min-height: 600px;
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 250px;
+}
+
+.header-container{
+    background-color: rgb(60, 60, 60);
+    /* background-color: rgb(112, 141, 166); */
+    /* background-color: rgb(194, 177, 155); */
+    min-height: 150px;
+    position: fixed;
+    width: 100%;
+}
+header{
+    max-width: 1300px;
+    /* background-color: blueviolet; */
+    min-height: 200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.col{
+    /* background-color: rgb(194, 177, 155); */
+    /* min-height: 200px; */
+    width: 30%;
+    margin-bottom: 50px;
+    /* background-color: rgb(115, 180, 180); */
+    background-color: rgb(112, 141, 166);
+}
+/* .detailsbutton{
+    padding: 10px 70px;
+    border-style: solid;
+    border-width: 1px;
+    margin-left: 70px;
+} */
+.col p{
+    font-size: 1.25rem;
+    padding: 10px 10px;
+    line-height: 0.95rem;
+    text-align: center;
+}
+
+.col img{
+    width: 100%;
+    height: auto;
+}
+.col p::first-line{
+    font-weight: bold;
+}
+
+.mybutton{
+    padding: 10px 25px;
+    border-style: solid;
+    border-width: 1px;
+    margin-left: 20px;
+}
+.mob-wrapper{
+    display: none;
+}
+
+/* nav a{
+    padding: 10px 25px;
+    border: solid;
+    border-width: 1px;
+    margin-left: 20px;
+} */
+.link-wrapper{
+    display: flex;
+    margin-bottom: 1em;
+}
+
+/* Tablet View */
+@media (max-width: 768px) {
+    .col{
+        width: 45%;
+    }
+    .header-container{
+        position: relative;
+    }
+    .container{
+        padding-top: 40px;
+    }
+    nav{
+        display: none;
+    }
+    nav a{
+        display: block;
+    }
+    .logo{
+        padding: 30px 0;
+    }
+    .mybutton{
+        margin-left: 0;
+    }
+    .mob-wrapper{
+        display: block;
+        padding-right: 30px;
+    }
+    .mob-nav{
+        display: none;
+        position: absolute;
+        padding-right: 30px;
+        padding-top: 10px;
+    }
+    .navbutton{
+        display: block;
+        background-color: rgb(97, 124, 146);
+        padding: 15px 30px;
+        margin-left: -70px;
+        text-align: center;
+    
+    }
+}
+
+/* Mobile View */
+@media (max-width: 480px) {
+    .col{
+        width: 100%;
+    }
+
+}
