@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Groupie Tracker</title>
-    <!-- <link rel="stylesheet" href="/static/css-reset.css"> -->
     <link rel="stylesheet" href="/static/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,14 +20,14 @@
                 <h1>Groupie Tracker Project</h1>
             </div>
             <nav>
-                <a href="index.html" class="mybutton">Home</a>
-                <a href="#" class="mybutton">Bands</a>
+                <!-- <a href="/templates/index.html" class="mybutton">Home</a> -->
+                <!-- <a href="#" class="mybutton">Bands</a> -->
             </nav>
             <div class="mob-wrapper">
                 <img src="static/icon-burger-menu.svg" alt="Mobile Menu Icon" style="width: 40px;" class="burgermenu">
                 <div class="mob-nav">
-                    <a href="index.html" class="navbutton">Home</a>
-                    <a href="#" class="navbutton">Bands</a>
+                    <!-- <a href="/templates/index.html" class="navbutton">Home</a> -->
+                    <!-- <a href="#" class="navbutton">Bands</a> -->
                 </div>
             </div>
         </header>
@@ -38,9 +37,11 @@
         {{ range .artists }}
         <div class="col"><img src="{{.Image}}" alt="">
             <p>Artist: {{.Name}}</p>
-            <div class="link-wrapper"><a href="/details/{{.ID}}" class="detailsbutton">More Details</a></div>
+            <div class="link-wrapper">
+                <a href="/details/{{.ID}}" class="detailsbutton">More Details</a>
+            </div>
         </div>
-            {{end}}
+        {{end}}
     </div>
     <script src="https://code.jquery.com/jquery-3.4.1.js"
         integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>

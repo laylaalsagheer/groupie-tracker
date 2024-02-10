@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Groupie Tracker - Details</title>
-    <!-- <link rel="stylesheet" href="/static/css-reset.css"> -->
     <link rel="stylesheet" href="/static/details.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,12 +18,12 @@
                 <h1>Groupie Tracker Project</h1>
             </div>
             <nav>
-                <a href="index.html" class="mybutton">Back</a>
+                <a href="#" class="mybutton">Back</a>
             </nav>
             <div class="mob-wrapper">
                 <img src="/static/icon-burger-menu.svg" alt="Mobile Menu Icon" style="width: 40px;" class="burgermenu">
                 <div class="mob-nav">
-                    <a href="index.html" class="navbutton">Back</a>
+                    <a href="#" class="navbutton">Back</a>
                 </div>
             </div>
         </header>
@@ -33,13 +32,25 @@
         <div class="col">
             <img src="{{.artist.Image}}" alt="">
             <p>Artist: {{.artist.Name}}</p>
-            <p>Location: 
-                {{range $key, $value := .locations}}
-                    {{$key}}: {{$value}},
+            <p>Locations:</p>
+            <ul>
+                {{range .locations.Locations}}
+                    <li>{{.}}</li>
                 {{end}}
-            </p>
+            </ul>
             <p>Dates: </p>
+            <ul>
+                {{range .dates.Dates}}
+                    <li>{{.}}</li>
+                {{end}}
+            </ul>
             <p>Relation: </p>
+<ul>
+    {{range $key, $value := .relations.DatesLocations}}
+        <li>{{$key}}: {{$value}}</li>
+    {{end}}
+</ul>
+
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.4.1.js"

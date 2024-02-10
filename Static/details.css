@@ -4,12 +4,10 @@ body {
     color: white;
     background-color: #EBEBEB;
 }
-
 a {
     text-decoration: none;
     color: white;
 }
-
 .container {
     min-height: 600px;
     max-width: 1500px;
@@ -20,7 +18,6 @@ a {
     align-items: center; /* Center vertically */
     padding-top: 400px; /* Adjust based on viewport height */
 }
-
 .header-container {
     background-color: rgb(60, 60, 60);
     min-height: 150px;
@@ -28,7 +25,6 @@ a {
     width: 100%;
     z-index: 1; 
 }
-
 header {
     max-width: 1300px;
     min-height: 200px;
@@ -37,92 +33,80 @@ header {
     justify-content: space-between;
     align-items: center;
 }
-
 .col {
     width: 50%;
     margin-bottom: 40px;
     background-color: rgb(112, 141, 166);
     position: relative; /* Position relative for the shaking animation */
-    transition: transform 0.2s ease; /* Shaking animation */
+    /* transition: transform 0.2s ease; */
     box-shadow: grey 0px 0px 20px; /* Add shadow */
 }
-.detailsbutton{
-    padding: 10px 70px;
-    border-style: solid;
-    border-width: 1px;
-    margin-left: 70px;
-}
-
-.col:hover {
-    transform: translateX(50px); /* Shaking animation */
-}
-
+/* .col:hover {
+    transform: translateX(30px); 
+} */
 .col p {
     font-size: 1.25rem;
     padding: 10px 10px;
     line-height: 1.5rem;
 }
-
 .col img {
     width: 100%;
     height: auto;
 }
-
 .mybutton {
     padding: 10px 25px;
     border-style: solid;
     border-width: 1px;
     margin-left: 20px;
 }
-
 .mob-wrapper {
     display: none;
 }
-
+.col p::first-line {
+    font-weight: bold;
+}
+ul {
+    list-style-type: circle;
+    margin-left: 20px;
+    padding-left: 20px;
+    font-size: 1.5rem;
+}
 /* Tablet View */
 @media (max-width: 768px) {
     .col {
         width: 70%;
     }
-    .col:hover {
-       transform: translateX(20px); /* Adjust shaking for tablet */
-        }
+    /* .col:hover {
+       transform: translateX(20px); 
+        } */
     .header-container {
         position: relative;
     }
-
     .container {
         padding-top: 40px;
     }
-
     nav {
         display: none;
     }
-
     nav a {
         display: block;
     }
-
     .logo {
         padding: 30px 0;
     }
-
     .mybutton {
         margin-left: 0;
     }
-
     .mob-wrapper {
         display: block;
         padding-right: 30px;
     }
-
     .mob-nav {
         display: none;
         position: absolute;
         padding-right: 30px;
         padding-top: 10px;
     }
-
     .navbutton {
         display: block;
         background-color: rgb(97, 124, 146);
@@ -131,7 +115,6 @@ header {
         text-align: center;
     }
 }
-
 /* Mobile View */
 @media (max-width: 480px) {
     .col {

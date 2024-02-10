@@ -5,4 +5,13 @@ $(document).ready(function(){
     });
 }); // Added closing parenthesis here
 
-document.querySelectorAll('a.mybutton').forEach(function(button) { button.addEventListener('click', function(e) { e.preventDefault(); fetch(e.target.href) .then(response => response.text()) .then(html => { document.querySelector('.container').innerHTML = html; }); }); });
+document.querySelectorAll('a.detailsbutton').forEach(function(button) {
+    button.addEventListener('click', function(e) {
+        e.preventDefault();
+        fetch(e.target.href)
+            .then(response => response.text())
+            .then(html => {
+                document.querySelector('.container').innerHTML = html;
+            });
+    });
+}); // Added closing parenthesis here
