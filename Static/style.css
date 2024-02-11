@@ -23,6 +23,7 @@ a{
     min-height: 150px;
     position: fixed;
     width: 100%;
+    z-index: 1; 
 }
 header{
     max-width: 1300px;
@@ -36,8 +37,11 @@ header{
     width: 30%;
     margin-bottom: 50px;
     background-color: rgb(112, 141, 166);
+    transition: transform 0.1s ease;
 }
-
+.col:hover {
+    transform: translateX(10px); 
+}
 .col p{
     font-size: 1.25rem;
     padding: 10px 10px;
@@ -61,7 +65,7 @@ header{
     padding: 10px 70px;
     border-style: solid;
     border-width: 1px;
-    margin-left: 70px;
+    margin: 0 auto;
 }
 .mob-wrapper{
     display: none;
@@ -76,6 +80,9 @@ header{
     .col{
         width: 45%;
     }
+    .col:hover {
+        transform: translateX(10px); 
+            }
     .header-container{
         position: relative;
     }
@@ -110,7 +117,16 @@ header{
         padding: 15px 30px;
         margin-left: -70px;
         text-align: center;
-    
+    }
+    .link-wrapper{
+        display: flex;
+        margin-bottom: 1rem;
+    }
+    .detailsbutton{
+        padding: 15px 30px;
+        border-style: solid;
+        border-width: 1px;
+        margin:  20px 25px;
     }
 }
 /* Mobile View */

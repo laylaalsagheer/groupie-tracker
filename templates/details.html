@@ -18,12 +18,12 @@
                 <h1>Groupie Tracker Project</h1>
             </div>
             <nav>
-                <a href="#" class="mybutton">Back</a>
+                <a href="/templates/index.html" class="mybutton">Bands</a>
             </nav>
             <div class="mob-wrapper">
                 <img src="/static/icon-burger-menu.svg" alt="Mobile Menu Icon" style="width: 40px;" class="burgermenu">
                 <div class="mob-nav">
-                    <a href="#" class="navbutton">Back</a>
+                    <a href="/templates/index.html" class="navbutton">Bands</a>
                 </div>
             </div>
         </header>
@@ -32,7 +32,7 @@
         <div class="col">
             <img src="{{.artist.Image}}" alt="">
             <p>Artist: {{.artist.Name}}</p>
-            <p>Locations:</p>
+            <!-- <p>Locations:</p>
             <ul>
                 {{range .locations.Locations}}
                     <li>{{.}}</li>
@@ -43,8 +43,8 @@
                 {{range .dates.Dates}}
                     <li>{{.}}</li>
                 {{end}}
-            </ul>
-            <p>Relation: </p>
+            </ul> -->
+            <p>Locations: Dates </p> 
 <ul>
     {{range $key, $value := .relations.DatesLocations}}
         <li>{{$key}}: {{$value}}</li>

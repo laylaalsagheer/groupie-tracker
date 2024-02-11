@@ -38,12 +38,12 @@ header {
     margin-bottom: 40px;
     background-color: rgb(112, 141, 166);
     position: relative; /* Position relative for the shaking animation */
-    /* transition: transform 0.2s ease; */
+    transition: transform 0.2s ease;
     box-shadow: grey 0px 0px 20px; /* Add shadow */
 }
-/* .col:hover {
+.col:hover {
     transform: translateX(30px); 
-} */
+}
 .col p {
     font-size: 1.25rem;
     padding: 10px 10px;
@@ -76,9 +76,9 @@ ul {
     .col {
         width: 70%;
     }
-    /* .col:hover {
-       transform: translateX(20px); 
-        } */
+    .col:hover {
+    transform: translateX(20px); 
+        }
     .header-container {
         position: relative;
     }
