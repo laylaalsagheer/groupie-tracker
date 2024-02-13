@@ -61,12 +61,6 @@ header{
     border-width: 1px;
     margin-left: 20px;
 }
-.detailsbutton{
-    padding: 10px 70px;
-    border-style: solid;
-    border-width: 1px;
-    margin: 0 auto;
-}
 .mob-wrapper{
     display: none;
 }
@@ -74,6 +68,12 @@ header{
 .link-wrapper{
     display: flex;
     margin-bottom: 1em;
+}
+.detailsbutton{
+    padding: 10px 70px;
+    border-style: solid;
+    border-width: 1px;
+    margin: 10px auto;
 }
 /* Tablet View */
 @media (max-width: 768px) {
@@ -123,7 +123,7 @@ header{
         margin-bottom: 1rem;
     }
     .detailsbutton{
-        padding: 15px 30px;
+        padding: 10px 25px;
         border-style: solid;
         border-width: 1px;
         margin:  20px 25px;
